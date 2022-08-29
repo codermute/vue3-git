@@ -2,12 +2,14 @@
   <div ref="countref">{{ count }}</div>
   <img alt="Vue logo" src="./assets/logo.png" @click="click" />
   <HelloWorld msg="Welcome to Your Vue.js App" />
+  <he-dhe />
   <h2>hahaha</h2>
 </template>
 
 <script setup>
 import { ref, nextTick } from "vue";
 import HelloWorld from "./components/HelloWorld.vue";
+import HeDhe from "./components/hehe.vue";
 
 const count = ref(0);
 const countref = ref(null);
@@ -27,7 +29,7 @@ const click = () => {
 };
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
