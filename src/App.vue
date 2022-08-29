@@ -1,15 +1,16 @@
 <template>
   <div ref="countref">{{ count }}</div>
-  <img alt="Vue logo" src="./assets/logo.png" @click="click">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img alt="Vue logo" src="./assets/logo.png" @click="click" />
+  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <h2>hahaha</h2>
 </template>
 
 <script setup>
-import { ref, nextTick } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
+import { ref, nextTick } from "vue";
+import HelloWorld from "./components/HelloWorld.vue";
 
-const count = ref(0)
-const countref = ref(null)
+const count = ref(0);
+const countref = ref(null);
 
 const click = () => {
   for (let i = 0; i < 10; i++) {
@@ -18,12 +19,12 @@ const click = () => {
     //   console.log(countref.value.innerHTML);
     // })
   }
-  count.value = 10
+  count.value = 10;
   console.log(countref.value.innerText);
   nextTick(() => {
     console.log(countref.value.innerHTML);
-  })
-}
+  });
+};
 </script>
 
 <style>
