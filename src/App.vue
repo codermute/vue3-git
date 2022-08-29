@@ -4,6 +4,7 @@
   <HelloWorld msg="Welcome to Your Vue.js App" />
   <he-dhe />
   <h2>hahaha</h2>
+  113
 </template>
 
 <script setup>
