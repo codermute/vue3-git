@@ -1,10 +1,12 @@
 <template>
-  <div ref="countref">{{ count }}</div>
-  <img alt="Vue logo" src="./assets/logo.png" @click="click" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
-  <he-dhe />
-  <h2>hahaha</h2>
-  113
+  <div id="app">
+    <div ref="countref">{{ count }}</div>
+    <img alt="Vue logo" src="./assets/logo.png" @click="click" />
+    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <he-dhe />
+    <h2>hahaha</h2>
+    113
+  </div>
 </template>
 
 <script setup>
